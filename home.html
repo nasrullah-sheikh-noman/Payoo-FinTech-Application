@@ -145,7 +145,7 @@
                 >Pin Number</label
               >
               <input
-                id="pin"
+                id="addmoney-pin"
                 minlength="4"
                 maxlength="4"
                 type="password"
@@ -166,56 +166,49 @@
     </div>
 
     <!-- Cashout  -->
-     <div class="form w-10/12 mx-auto my-12 hidden">
-      <h2 class="label text-xl font-bold text-neutral">Add Money</h2>
+     <div class="form w-10/12 mx-auto my-12 ">
+      <h2 class="label text-xl font-bold text-neutral">Cash Out</h2>
       <div class="hero bg-base-200 mt-3">
         <div class="card bg-base-100 w-full max-w-sm shadow-2xl rounded-2xl">
           <div class="card-body ">
             <fieldset class="fieldset gap-4">
-              <label class="label text-sm font-bold text-neutral"
-                >Select A Bank</label
-              >
-              <select
-                class="select appearance-none input w-full rounded-full bg-base-200"
-              >
-                <option disabled selected>Select back</option>
-                <option>Sonali Bank</option>
-                <option>Agrani Bank</option>
-                <option>Pubali Bank</option>
-              </select>
               <label class="label text-sm font-semibold text-neutral"
-                >Bank Account Number</label
+                >Agent Number</label
               >
               <input
+                id="agent-number"
                 minlength="11"
                 maxlength="11"
                 type="tel"
                 class="input w-full rounded-full bg-base-200"
-                placeholder="Enter 11 digit account number"
+                placeholder="Enter 11 digit number"
               />
               <label class="label text-sm font-semibold text-neutral"
-                >Amount to Add</label
+                >Amount</label
               >
               <input
+                id="cashout-amount"
                 type="number"
                 class="input w-full rounded-full bg-base-200"
-                placeholder="Add Amount to withdraw"
+                placeholder="Enter amount to withdraw"
               />
               <label class="label text-sm font-semibold text-neutral"
                 >Pin Number</label
               >
               <input
+                id="cashout-pin"
                 minlength="4"
                 maxlength="4"
-                type="text"
+                type="password"
                 class="input w-full rounded-full bg-base-200"
                 placeholder="Enter 4 digit pin number"
               />
 
               <button
+                id="withdraw-btn"
                 class="btn btn-primary mt-4 w-full rounded-full"
               >
-                Add Money
+                Withdraw Money
               </button>
             </fieldset>
           </div>
@@ -225,6 +218,7 @@
 
 
     <script src="./script/addMoney.js"></script>
+    <script src="./script/cashOut.js"></script>
 
   </body>
 </html>

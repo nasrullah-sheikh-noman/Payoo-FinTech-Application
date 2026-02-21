@@ -21,7 +21,7 @@ document.getElementById("add-money-btn").addEventListener("click", function() {
     return;
   }
 
-  const accountPIn = document.getElementById("pin");
+  const accountPIn = document.getElementById("addmoney-pin");
   const pin = accountPIn.value;
   if(pin == "1234") {
 
