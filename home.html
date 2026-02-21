@@ -46,7 +46,7 @@
           <img class="w-16 h-12" src="./assets/logo.png" alt="" />
         </div>
         <div>
-          <h2 class="text-2xl font-semibold">$<span>45000</span></h2>
+          <h2 class="text-2xl font-semibold">$<span id="amount">45000</span></h2>
           <p class="text-gray-500">Available Balance</p>
         </div>
       </div>
@@ -81,7 +81,7 @@
         <img src="./assets/opt-1.png" alt="" />Cashout
       </button>
       <button
-        class="border h-full btn btn-soft border-gray-300 rounded-2xl flex flex-col items-center py-6 cursor-pointer"
+        class="border h-full btn btn-soft border-gray-300 rounded-2xl flex flex-col items-center cursor-pointer"
       >
         <img src="./assets/opt-1.png" alt="" />Transfer Money
       </button>
@@ -103,7 +103,7 @@
     </section>
 
     <!-- Add money  -->
-    <div class="form w-10/12 mx-auto my-12 ">
+    <div class="form w-10/12 mx-auto my-12 hidden">
       <h2 class="label text-xl font-bold text-neutral">Add Money</h2>
       <div class="hero bg-base-200 mt-3">
         <div class="card bg-base-100 w-full max-w-sm shadow-2xl rounded-2xl">
@@ -113,6 +113,7 @@
                 >Select A Bank</label
               >
               <select
+                id="select-bank"
                 class="select appearance-none input w-full rounded-full bg-base-200"
               >
                 <option disabled selected>Select back</option>
@@ -124,6 +125,7 @@
                 >Bank Account Number</label
               >
               <input
+                id="bank-account-number"
                 minlength="11"
                 maxlength="11"
                 type="tel"
@@ -134,6 +136,7 @@
                 >Amount to Add</label
               >
               <input
+                id="add-amount"
                 type="number"
                 class="input w-full rounded-full bg-base-200"
                 placeholder="Add Amount to withdraw"
@@ -142,15 +145,17 @@
                 >Pin Number</label
               >
               <input
+                id="pin"
                 minlength="4"
                 maxlength="4"
-                type="text"
+                type="password"
                 class="input w-full rounded-full bg-base-200"
                 placeholder="Enter 4 digit pin number"
               />
 
               <button
                 class="btn btn-primary mt-4 w-full rounded-full"
+                id="add-money-btn"
               >
                 Add Money
               </button>
@@ -218,6 +223,8 @@
       </div>
     </div>
 
-    
+
+    <script src="./script/addMoney.js"></script>
+
   </body>
 </html>
